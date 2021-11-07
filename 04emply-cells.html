@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Empty Cells</title>
+    <style type="text/css">
+        td{
+            border: 1px solid #0088dd;
+            padding: 15px;
+        }
+        table.one{
+            empty-cells: show; /* ô trống hiển thị */
+        } /* những ô trong bảng mà để trống thì nó sẽ vẫn hiện ô đó */
+        table.two{
+            empty-cells: hide; /* ô trống ẩn */
+        } /* những ô trong bảng để trống sẽ mất bị ẩn */
+
+
+    </style>
+</head>
+<body> <!-- ô trống -->
+<table class="one">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+    </tr>
+</table>
+<table class="two">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
